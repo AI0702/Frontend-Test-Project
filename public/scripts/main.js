@@ -7,10 +7,13 @@ if (!PIXI.utils.isWebGLSupported()) {
 //After the HTML is fully, loaded
 window.onload = () => {
 
+    //Preloader
+    prog();
+
     //Create Pixi App 1
     const app1 = new PIXI.Application({ 
     width: window.innerWidth,         
-    height: (window.innerWidth/2)*0.8,        
+    height: window.innerWidth/2,        
     antialias: true,    // default: false
     transparent: false, // default: false
     resolution: 1,       // default: 1
@@ -44,8 +47,6 @@ window.onload = () => {
     //When all assets for app 1 have been loaded
     .load(onAssetsLoaded1);
 
-    // Start the animation for app 1
-    animate1();
     
 
 
@@ -325,7 +326,7 @@ window.onload = () => {
     //Create a Pixi App 2
     const app2 = new PIXI.Application({ 
         width: window.innerWidth,         
-        height: window.innerWidth*0.7,        
+        height: window.innerWidth,        
         antialias: true,    // default: false
         transparent: true, // default: false
         resolution: 1,       // default: 1
@@ -346,11 +347,14 @@ window.onload = () => {
     .add('mrk', '../images/wheel/marker.png')
     .add('btn', '../images/wheel/btn-spin.png')
     .add('btn2', '../images/wheel/btn2-spin.png')
+    .add('ban1', '../images/wheel/ban1.png')
+    .add('p1', '../images/wheel/p1.png')
+    .add('p2', '../images/wheel/p2.png')
+    .add('p3', '../images/wheel/p3.png')
+    .add('p4', '../images/wheel/p4.png')
     //When all assets for app 2 have been loaded
     .load(onAssetsLoaded2);
 
-    // Start the animation for app 2
-    animate2();
     
     
     
@@ -372,31 +376,42 @@ window.onload = () => {
         back2.anchor.set(0.5);
         container2.addChild(back2);
 
+        // Create a new texture for banner
+        ban1 = new PIXI.Sprite(loader2.resources.ban1.texture);
+        ban1.x = app2.view.width/-4;
+        ban1.y = app2.view.height/-2.2;
+        ban1.width = app2.view.width/2;
+        ban1.height = app2.view.height/7;
+        ban1.alpha = 0;
+        container2.addChild(ban1);
+
         // Create a new texture for wheel
         whl = new PIXI.Sprite(loader2.resources.whl.texture);
         whl.x = app2.view.width/100;
-        whl.y = app2.view.height/20;
+        whl.y = app2.view.height/100;
         whl.anchor.set(0.5);
         whl.width = app2.view.width/2.35;
-        whl.height = app2.view.height/1.65;
+        whl.height = app2.view.height/2.35;
+        whl.interactive = true;
+        whl.buttonMode = true;
         whl.angle = Math.floor(Math.random() * 360)
         whl.alpha = 0;
         container2.addChild(whl);
+        whl.on('pointerdown', onClickSpin);
 
         // Create a new texture for marker
         mrk = new PIXI.Sprite(loader2.resources.mrk.texture);
-        mrk.x = app2.view.width/-20;
-        mrk.y = app2.view.height/-2.5;
-        mrk.width = app2.view.width/10;
+        mrk.x = app2.view.width/-25;
+        mrk.y = app2.view.height/-2.9;
+        mrk.width = app2.view.width/11;
         mrk.height = app2.view.height/5;
-        
         mrk.alpha = 0;
         container2.addChild(mrk);
 
         // Create a new texture for spin button
         btn = new PIXI.Sprite(loader2.resources.btn.texture);
         btn.x = app2.view.width/-6;
-        btn.y = app2.view.height/2.7;
+        btn.y = app2.view.height/3.75;
         btn.width = app2.view.width/3;
         btn.height = app2.view.height/10;
         btn.interactive = true;
@@ -425,7 +440,9 @@ window.onload = () => {
         var whltimer = 0;
         var animfinished2 = false;
         var spntimer = 0;
+        var spntimertmp = 0;
         var rot = 0;
+        var stp = false;
         animfinished3 = false;
 
         app2.ticker.add((delta) => {
@@ -458,6 +475,7 @@ window.onload = () => {
 
                                 if (whltimer >= 110)
                                 {
+                                    ban1.alpha = 1;
                                     whl.alpha = 1;
                                     mrk.alpha = 1;
                                     btn.alpha = 1;
@@ -470,13 +488,28 @@ window.onload = () => {
                     }
                 }
             }
+
+
+
+            if (animfinished2 == true){
+                whltimer += delta;
+                
+                if (whltimer >= 30){
+                    ban1.alpha = 0;
+
+                    if (whltimer >= 60){
+                        ban1.alpha = 1;
+                        whltimer = 0;
+                    }
+                }
+            }
+
             
 
             
             if (spin == true){
             
                 spntimer += delta;
-                //rot++;
                 whl.angle += rot;
 
                 if (whl.angle >= 360){
@@ -531,16 +564,45 @@ window.onload = () => {
                                                                         if (spntimer >= 250){
                                                                             rot = 4;
 
-                                                                            if (whl.angle >= rigmin && whl.angle <= rigmax){
+                                                                            if ( (whl.angle >= rigmin && whl.angle <= rigmax) && stp == false){
                                                                                 rot = 2;
 
-                                                                                if (Math.round(whl.angle) >= rigangle ){
-                                                                                    rot = 0;
-                                                                                    spntimer = 0;
-                                                                                    btn.interactive = true;
-                                                                                    btn.buttonMode = true;
-                                                                                    btn2.alpha = 0;
-                                                                                    spin = false;
+                                                                                if (Math.round(whl.angle) == rigangle || Math.round(whl.angle) == (rigangle + 1) || Math.round(whl.angle) == (rigangle - 1)){
+                                                                                    spntimertmp = spntimer;
+                                                                                    stp = true;
+                                                                                }
+                                                                            }
+
+                                                                            if (stp == true){
+                                                                                if ( (spntimer - spntimertmp) >= 0){
+                                                                                    rot = 2.5;
+
+                                                                                    if ( (spntimer - spntimertmp) >= 3){
+                                                                                        rot = -2.5;
+
+                                                                                        if ( (spntimer - spntimertmp) >= 6){
+                                                                                            rot = -2.5;
+
+                                                                                            if ( (spntimer - spntimertmp) >= 9){
+                                                                                                rot = 2.5;
+
+                                                                                                if ( (spntimer - spntimertmp) >= 12){
+                                                                                                    whl.angle = rigangle; 
+
+                                                                                                    if ( (spntimer - spntimertmp) >= 15){
+                                                                                                        rot = 0;
+                                                                                                        spntimer = 0;
+                                                                                                        spntimertmp = 0;
+                                                                                                        stp = false;
+                                                                                                        btn.interactive = true;
+                                                                                                        btn.buttonMode = true;
+                                                                                                        btn2.alpha = 0;
+                                                                                                        spin = false;
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
                                                                                 }
                                                                             }
                                                                         }
@@ -570,8 +632,18 @@ window.onload = () => {
 
 
     //Wheel Spin function
+    var aler = false;
     function onClickSpin(){
-        alert("Dev note: \nThe wheel will always stop at position " + jsonObject.POSITION + ". This can be changed in the test.json file");
+        
+		if (jsonObject.POSITION <1 || jsonObject.POSITION > whlzones){
+			alert("Dev note: \nError: Invalid position in test.json file. Position must be between 1 and " + whlzones + ".");
+			return;
+		}
+		
+        if (aler == false){
+		    alert("Dev note: \nThe wheel will always stop at position " + jsonObject.POSITION + ". This can be changed in the test.json file");
+            aler = true;
+        }
 
         btn.interactive = false;
         btn.buttonMode = false;
@@ -588,63 +660,71 @@ window.onload = () => {
         rigmax = rigvalue * (360/whlzones);
         rigangle = Math.floor(Math.random() * (rigmax - rigmin) ) + rigmin;
         spin = true;
+
+        return;
     }
 
+    
 
+    //Key press function
+    document.addEventListener("keydown", function(event) {
+       // event.preventDefault();
+        switch (event.which) {
+            case 13:
+                if (!spin){
+                    onClickSpin();
+                }
+            break;
+            case 32:
+                if (!spin){
+                    onClickSpin();
+                }
+            break;
+        }
 
-
-
-
-
+        return;
+    });
       
+
+
+    //Resize function
+    window.addEventListener('resize', resizeevent);
+    var alerres = false;
+    function resizeevent(){
+        if (!alerres){
+            alert("Please refresh the page to resize contents.");
+            alerres = true;
+        }
+    }
     
 
-    
-    
 
+    //Loader progress function
+    function prog() {
+        var progressbar = document.getElementsByClassName('progress-bar')[0];
+        var loadercont = document.getElementsByClassName('preloader-back')[0];
+        var progressed = 0;
+        var opac = 1;
 
-
+        var progressint = setInterval(moveprog, 10);
         
-
-
-
-
-
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-         
-         
-    
-
-
-       
-
+        function moveprog() {
+            if (progressed < 100) {
+                progressed++;
+                progressbar.style.width = progressed + "%";
+                
+            } 
+            else {
+                clearInterval(progressint);
+                loadercont.style.display = 'none';
+                document.body.style.overflowY = 'scroll';
+                animate1();
+                animate2();
+                return;
+            }
+        }
+     
+        return;
+    }
 
 }
