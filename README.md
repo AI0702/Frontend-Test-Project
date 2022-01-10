@@ -28,11 +28,11 @@
 #### 3. Running the Application
 Go to the address: `localhost:8000`
 
-###### Spinning the wheel
+##### Spinning the wheel
 The wheel can be spinned by:
 * Clicking on the "Spin" button.
 * Clicking on the wheel itself.
-* Pressing `Ente`r or `Space`.
+* Pressing `Enter` or `Space`.
 
 #### Optional. Changing the wheel stop position
 Go to the path`\public\json\` and edit the `test.json` file. Change the value of the position attribute. (current valid values are 1 - 4)
