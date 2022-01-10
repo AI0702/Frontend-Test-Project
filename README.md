@@ -20,13 +20,13 @@
 ## How to run
 
 #### 1. Installing Dependencies
-`npm install`
+```npm install```
 
 #### 2. Starting Web Server
-`npm start`
+```npm start```
 
 #### 3. Running the Application
-Go to the address: `localhost:8000`
+Go to the address: ```localhost:8000```
 
 #### (Spinning the wheel)
 The wheel can be spinned by:
