@@ -50,6 +50,8 @@ Go to the path`\public\json\` and edit the `test.json` file. Change the value of
 
 ![s1](https://user-images.githubusercontent.com/69671663/148857216-1e8c8383-738d-4575-98c4-5653798e9d9b.png)
 
-<p align="center">
 ![s2](https://user-images.githubusercontent.com/69671663/148857207-cc5d78c3-0243-4820-845c-175ff82c601d.png)
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/69671663/148857207-cc5d78c3-0243-4820-845c-175ff82c601d.png" />
 </p>
