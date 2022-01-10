@@ -2,11 +2,13 @@
 
 "Showdown" header and "Wheel" spinner developed using Pixi JS, with minimal dependencies. Includes an integrated web server.
 
+
 ## Requirements
 * Node JS
 * Pixi JS (installed automatically)
 * Bootstrap (installed automatically)
 * Express framework (installed automatically)
+
 
 ## Features
 * A visual demonstration of animation and frontend-backend communications.
@@ -16,6 +18,7 @@
 * The "wheel" spinner requests on an endpoint from the JSON file, which returns a JSON object, based on which the wheel spins and stops randomly in range of the given position. This position can be changed in the `test.json` file.
 * The wheel's start position is always randomized to give a dynamic feel. The wheel's stop position is also randomized in range of the given position quadrant specified in the json file.
 * A preloader animation for visual effects and to load resources efficiently upon startup.
+
 
 ## How to run
 
@@ -36,6 +39,7 @@ The wheel can be spinned by:
 
 #### (Optional) (Changing the wheel stop position)
 Go to the path`\public\json\` and edit the `test.json` file. Change the value of the position attribute. (current valid values are 1 - 4)
+
 
 ## Screenshots
 
