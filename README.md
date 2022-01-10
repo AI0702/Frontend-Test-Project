@@ -28,7 +28,7 @@
 #### 3. Running the Application
 Go to the address: `localhost:8000`
 
-##### Spinning the wheel
+#### Spinning the wheel
 The wheel can be spinned by:
 * Clicking on the "Spin" button.
 * Clicking on the wheel itself.
