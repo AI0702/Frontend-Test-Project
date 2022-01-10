@@ -46,10 +46,8 @@ Go to the path`\public\json\` and edit the `test.json` file. Change the value of
 
 ## Screenshots
 
-![s1](https://user-images.githubusercontent.com/69671663/148763516-e9d4c41f-23f6-4607-b9b7-1e91d6b9678a.png)
+![s0](https://user-images.githubusercontent.com/69671663/148857215-78fa76ec-9721-4b32-93d7-ea8cdff8cf35.png)
 
-![s2](https://user-images.githubusercontent.com/69671663/148763521-7adba411-66f1-49ac-bded-1aad462ef1b1.png)
+![s1](https://user-images.githubusercontent.com/69671663/148857216-1e8c8383-738d-4575-98c4-5653798e9d9b.png)
 
-![s3](https://user-images.githubusercontent.com/69671663/148763570-32f2fdd3-f330-44af-84b9-9a840693d836.png)
-
-
+![s2](https://user-images.githubusercontent.com/69671663/148857207-cc5d78c3-0243-4820-845c-175ff82c601d.png)
