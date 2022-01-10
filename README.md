@@ -20,7 +20,9 @@
 ## How to run
 
 #### 1. Installing Dependencies
-```npm install```
+```
+npm install
+```
 
 #### 2. Starting Web Server
 ```npm start```
