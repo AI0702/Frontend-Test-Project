@@ -22,6 +22,7 @@
 ## How to run
 
 #### 1. Installing Dependencies
+(make sure your internet is connected for this step.)
 ```
 npm install
 ```
@@ -44,7 +45,7 @@ The wheel can be spinned by:
 * Pressing `Enter` or `Space`.
 
 #### (Optional) (Changing the wheel stop position)
-Go to the path`\public\json\` and edit the `test.json` file. Change the value of the position attribute. (current valid values are 1 - 4)
+From the project folder, go to the path`\public\json\` and edit the `test.json` file. Change the value of the position attribute. (current valid values are 1 - 4)
 
 ## Screenshots
 
