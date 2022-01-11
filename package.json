@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"   
+    "start": "node index.js"
   },
-  "author": "",
+  "author": "AI0702",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.2"
