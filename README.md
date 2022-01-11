@@ -12,6 +12,7 @@
 * A visual demonstration of animation and frontend-backend communications.
 * Cross-platform compatible and responsive for all deveices, including IPhone 7 and newer, Desktop Chrome ( latest ), Mac Safari ( latest ), Windows  IE ( 10 and newer ) etc.
 * Integrated web server that hosts the application.
+* Minified js files.
 * The showdown header lightning bolt keeps flickering at a 10 sec interval, while everything else remains lit.
 * The wheel spinner requests on an endpoint from the JSON file, which returns a JSON object, based on which the wheel spins and stops randomly in range of the given position. This position can be changed in the `test.json` file.
 * The wheel's start position is always randomized to give a dynamic feel. The wheel's stop position is also randomized in range of the given position quadrant specified in the json file.
