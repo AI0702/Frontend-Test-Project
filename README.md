@@ -20,9 +20,9 @@
 * (more coming soon...)
 
 ## How to run
+(make sure your internet is connected.)
 
 #### 1. Installing Dependencies
-(make sure your internet is connected for this step.)
 ```
 npm install
 ```
