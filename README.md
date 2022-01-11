@@ -51,6 +51,8 @@ From the project folder, go to the path`\public\json\` and edit the `test.json` 
 
 ![s0](https://user-images.githubusercontent.com/69671663/148857215-78fa76ec-9721-4b32-93d7-ea8cdff8cf35.png)
 
+![s3](https://user-images.githubusercontent.com/69671663/148976216-3912c577-c39a-4965-831a-772649555ed6.png)
+
 ![s1](https://user-images.githubusercontent.com/69671663/148857216-1e8c8383-738d-4575-98c4-5653798e9d9b.png)
 
 <p align="center">
