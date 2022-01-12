@@ -58,7 +58,9 @@ From the project folder, go to the path`\public\json\` and edit the `test.json` 
   <img src="https://user-images.githubusercontent.com/69671663/149233965-08137f08-51d3-46d1-9a60-69af5389f4b0.png" />
   
   <img src="https://user-images.githubusercontent.com/69671663/149233966-67444c76-2d8d-4e54-99a0-17490f59c3fa.png" />
-  
+</p>
+
+<p align="center">
   <img src="https://user-images.githubusercontent.com/69671663/149233970-f0c68401-08a7-4dd2-935b-9b9db82eb77e.png" />
   
   <img src="https://user-images.githubusercontent.com/69671663/149233972-fc88739e-d621-4045-908d-f19548b0b213.png" />
