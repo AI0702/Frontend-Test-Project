@@ -10,7 +10,7 @@
 
 ## Features
 * A visual demonstration of animation and frontend-backend communications.
-* Extremely light-weight, cross-platform compatible, and responsive for all deveices, including IPhone 7 and newer, Desktop Chrome ( latest ), Mac Safari ( latest ), Windows  IE ( 10 and newer ) etc.
+* Extremely light-weight, cross-platform compatible, pixel-perfect responsiveness for all deveices, including IPhone 7 and newer, Desktop Chrome ( latest ), Mac Safari ( latest ), Windows  IE ( 10 and newer ) etc.
 * Integrated web server that hosts the application.
 * Minified js files.
 * Appropriate error handling and debug messages.
