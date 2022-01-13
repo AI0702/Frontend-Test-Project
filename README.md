@@ -56,33 +56,21 @@ From the project folder, go to the path`\public\json\` and edit the `test.json` 
 ## Screenshots
 
 <p align="center">
+
+  <img src="https://user-images.githubusercontent.com/69671663/149233950-a3ecae35-711c-4c2f-80eb-d1aeeaecf5a3.png" />
   
-  <p>
-    <img src="https://user-images.githubusercontent.com/69671663/149233950-a3ecae35-711c-4c2f-80eb-d1aeeaecf5a3.png" />
-  </p>
+  <img src="https://user-images.githubusercontent.com/69671663/149233960-ee0170f2-27b2-4312-a12c-24f784806c1b.png" />
   
-  <p>
-    <img src="https://user-images.githubusercontent.com/69671663/149233960-ee0170f2-27b2-4312-a12c-24f784806c1b.png" />
-  </p>
+  <img src="https://user-images.githubusercontent.com/69671663/149321500-b85a407e-0fa3-42a9-8fba-2017edaa848a.png" />
   
-  <p>
-    <img src="https://user-images.githubusercontent.com/69671663/149321500-b85a407e-0fa3-42a9-8fba-2017edaa848a.png" />
-  </p>
-   
-  <p>
-    <img src="https://user-images.githubusercontent.com/69671663/149321513-509e153f-8da7-43e0-990a-2fbacb718ce7.png" />
-  </p>
+  <img src="https://user-images.githubusercontent.com/69671663/149321513-509e153f-8da7-43e0-990a-2fbacb718ce7.png" />
     
 </p>
 
 <p align="center">
   
-  <p>
-    <img src="https://user-images.githubusercontent.com/69671663/149321517-cbaf471c-d099-4cd5-a5dd-07965d9f2d48.png" />
-  </p>
+  <img src="https://user-images.githubusercontent.com/69671663/149321517-cbaf471c-d099-4cd5-a5dd-07965d9f2d48.png" />
   
-  <p>
-    <img src="https://user-images.githubusercontent.com/69671663/149321523-81ac291c-e23f-4a05-9ef9-40908d0c2e12.png" />
-  </p>
+  <img src="https://user-images.githubusercontent.com/69671663/149321523-81ac291c-e23f-4a05-9ef9-40908d0c2e12.png" />
   
 </p>
