@@ -34,7 +34,7 @@ npm install
 npm start
 ```
 
-#### (Optional) (Starting Dev Server)
+#### (Optional) (Starting Dev Environment)
 ```
 npm run dev
 ```
