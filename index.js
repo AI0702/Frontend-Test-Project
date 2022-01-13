@@ -5,7 +5,7 @@ const port = 8000;
 
 
 app.get('/', (req, res) => {
-  res.sendFile('public/views/index.html', {root: __dirname })
+  res.sendFile('public/views/index-dev.html', {root: __dirname })
 });
 
 app.use(express.static(path.join(__dirname, 'public')));
