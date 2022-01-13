@@ -3,7 +3,7 @@
 `Showdown` header and `Wheel` spinner developed using Pixi JS, with minimal dependencies. Includes an integrated web server.
 
 ## Requirements
-* Node JS [download link](https://nodejs.org/en/download/)
+* Node JS [download link]((https://nodejs.org/en/download/))
 * Pixi JS [see installation step 1](#1-installing-dependencies)
 * Bootstrap [see installation step 1](#1-installing-dependencies)
 * Express framework [see installation step 1](#1-installing-dependencies)
