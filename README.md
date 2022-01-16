@@ -1,5 +1,7 @@
 # LIVE PREVIEW
-[(Preview)](https://thunderbite-test-ai0702.herokuapp.com/)
+<p align="center">
+### [(Preview)](https://thunderbite-test-ai0702.herokuapp.com/)
+</p>
 
 
 
