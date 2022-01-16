@@ -1,7 +1,6 @@
 # LIVE PREVIEW
-<p align="center">
- <h2>https://thunderbite-test-ai0702.herokuapp.com/</h2>
-</p>
+<h2><p align="center">https://thunderbite-test-ai0702.herokuapp.com/</p></h2>
+
 
 
 
