@@ -1,4 +1,4 @@
-# Thunderbite-test
+# Thunderbite Test
 
 `Showdown` header and `Wheel` spinner developed using Pixi JS, with minimal dependencies. Includes an integrated web server.
 
