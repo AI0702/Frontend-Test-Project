@@ -1,9 +1,12 @@
+# LIVE PREVIEW
+[(Preview)](https://thunderbite-test-ai0702.herokuapp.com/)
+
+
+
 # Thunderbite Test
 
 `Showdown` header and `Wheel` spinner developed using Pixi JS, with minimal dependencies. Includes an integrated web server.
 
-## LIVE PREVIEW
-* Node JS [(Preview)](https://thunderbite-test-ai0702.herokuapp.com/)
 
 ## Requirements
 * Node JS [(download link)](https://nodejs.org/en/download/)
