@@ -64,9 +64,11 @@ From the project folder, go to the path`\public\json\` and edit the `test.json` 
 
 <p align="center">
 
+  <!--
   <img src="https://user-images.githubusercontent.com/69671663/149233950-a3ecae35-711c-4c2f-80eb-d1aeeaecf5a3.png" />
   
   <img src="https://user-images.githubusercontent.com/69671663/149233960-ee0170f2-27b2-4312-a12c-24f784806c1b.png" />
+  -->
   
   <img src="https://user-images.githubusercontent.com/69671663/149321500-b85a407e-0fa3-42a9-8fba-2017edaa848a.png" />
   
